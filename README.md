@@ -1,2 +1,7 @@
 # docker-hugo
-Hugo static website generator
+
+Dockerfile to create a Hugo static website generator container
+
+Uses Alpine 3.3 as the foundation
+
+

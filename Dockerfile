@@ -1,17 +1,14 @@
 # Runs Hugo static site generator
-FROM ubuntu:14.04
+FROM alpine:3.3
+
 
 ENV VIRTUAL_HOST docker.local
 
-RUN apt-get update && \
-    apt-get install -y -qq curl && \
-    apt-get install -y -qq python-pip python-dev build-essential && \
-    pip install --upgrade pip && \
-    pip install --upgrade virtualenv
-
-RUN curl -o hugo.tar.gz -L https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_amd64.tar.gz 
-RUN tar -xvf hugo.tar.gz
-RUN cp hugo_0.15_linux_amd64/hugo_0.15_linux_amd64 /usr/local/bin/hugo
+RUN apk update && \
+    apk add curl tar && \
+    curl -o hugo.tar.gz -L https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_linux_amd64.tar.gz && \
+    tar -xvf hugo.tar.gz && \
+    cp hugo_0.15_linux_amd64/hugo_0.15_linux_amd64 /usr/local/bin/hugo
 
 WORKDIR /development
 
