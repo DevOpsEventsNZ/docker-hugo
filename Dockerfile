@@ -12,8 +12,9 @@ RUN apk update && \
     tar -xvf hugo.tar.gz && \
     cp hugo_0.15_linux_amd64/hugo_0.15_linux_amd64 /usr/local/bin/hugo
 
-WORKDIR /development
+WORKDIR /site
+ENV VIRTUAL_HOST docker.local 
 
 EXPOSE 1313
 
-CMD hugo --renderToDisk=true --watch=true --bind="0.0.0.0" --baseURL="http://${VIRTUAL_HOST}:1313" server 
+CMD hugo --renderToDisk=true --watch=true --bind="0.0.0.0" --baseURL="http://${VIRTUAL_HOST}:1313" server /site
