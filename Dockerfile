@@ -1,8 +1,8 @@
+#
 # Runs Hugo static site generator
+#
 FROM alpine:3.3
-
-
-ENV VIRTUAL_HOST docker.local
+MAINTAINER Randolph Kahle "randolph.kahle@databliss.net"
 
 RUN apk update && \
     apk add curl tar && \
