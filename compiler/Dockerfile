@@ -1,5 +1,5 @@
 #
-# Runs Hugo static site generator
+# Runs Hugo static site generator as a compiler
 #
 FROM alpine:3.3
 MAINTAINER Randolph Kahle "randolph.kahle@databliss.net"
@@ -13,8 +13,6 @@ RUN apk update && \
     cp hugo_0.15_linux_amd64/hugo_0.15_linux_amd64 /usr/local/bin/hugo
 
 WORKDIR /site
-ENV VIRTUAL_HOST docker.local 
+ENV VIRTUAL_HOST="http://docker.local:1313"
 
-EXPOSE 1313
-
-CMD hugo --renderToDisk=true --watch=true --bind="0.0.0.0" --baseURL="http://${VIRTUAL_HOST}:1313" server /site
+CMD hugo  --baseURL="${VIRTUAL_HOST}"
