@@ -1,0 +1,15 @@
+# !/bin/bash
+#
+# File: build
+#
+# Purpose: build the hugo foundation container
+#
+# Author: Randolph Kahle, Databliss, LLC
+#
+# Copyright: Randolph Kahle, 2016
+#
+# License: MIT
+#
+
+docker build -t databliss/hugo .
+
