@@ -9,4 +9,4 @@ ENV VIRTUAL_HOST="http://docker.local:1313"
 
 EXPOSE 1313
 
-CMD hugo --renderToDisk=true --watch=true --bind="0.0.0.0" --baseURL="${VIRTUAL_HOST}" server /site
+CMD hugo --renderToDisk=true --watch=true --bind="0.0.0.0" --baseURL="${VIRTUAL_HOST}:1313" server /site
