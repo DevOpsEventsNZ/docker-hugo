@@ -4,7 +4,8 @@
 FROM alpine:3.3
 MAINTAINER Randolph Kahle "randolph.kahle@databliss.net"
 
-RUN apk update && \
+RUN apk update  && \
+    apk upgrade && \
     apk add \
       curl \
       tar && \
