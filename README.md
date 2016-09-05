@@ -8,9 +8,13 @@ from this base image.
 
 Refer also to:
 
-    * https://github.com/databliss/docker-hugo-server
+    * https://github.com/databliss/docker-hugo-server  (GitHub)
 
-    * https://github.com/databliss/docker-hugo-compiler
+    * https://hub.docker.com/r/databliss/hugo-server/  (Docker Hub)
+
+    * https://github.com/databliss/docker-hugo-compiler (GitHub)
+
+    * https://hub.docker.com/r/databliss/hugo-compiler/ (Docker Hub)
 
 
 databliss/hugo
