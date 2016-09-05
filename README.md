@@ -1,26 +1,17 @@
 # docker-hugo
 
-This repository contains directives to build a base image for using the Hugo
-static web site generator
+This repository supplies the Docker Hub container located at 
+https://hub.docker.com/r/databliss/docker-hugo/ . Docker Hug will automaticaly
+update the creation of the Docker image when it detects any changes made to
+this repository.
 
-Two other Git repositories build the server and compiler versions of Hugo
-from this base image.
-
-Refer also to:
-
-    * https://github.com/databliss/docker-hugo-server  (GitHub)
-
-    * https://hub.docker.com/r/databliss/hugo-server/  (Docker Hub)
-
-    * https://github.com/databliss/docker-hugo-compiler (GitHub)
-
-    * https://hub.docker.com/r/databliss/hugo-compiler/ (Docker Hub)
+databliss/docker-hugo is an installation of Hugo release 0.15 running on Apline
+Linux release 3.3. This container is designed to creat an image that is then
+used for databliss/docker-hugo-compiler and databliss/docker-hugo-server.
 
 
-databliss/hugo
+databliss/docker-hugo
 --------------
 
-Builds an installation of Hugo 0.15 on the Alpine Linux 3.3 release.
-
-This is used by the other images as noted above.
+Docker image that serves as a foundation image for other Hugo Docker images.
 
