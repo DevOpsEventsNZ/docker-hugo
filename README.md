@@ -15,4 +15,3 @@ databliss/docker-hugo
 --------------
 
 Docker image that serves as a foundation image for other Hugo Docker images.
-
