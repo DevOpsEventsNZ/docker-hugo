@@ -11,4 +11,4 @@
 # License: MIT
 #
 
-docker build -t databliss/hugo:0.15 .
+docker build -t databliss/docker-hugo:0.15.1 .
