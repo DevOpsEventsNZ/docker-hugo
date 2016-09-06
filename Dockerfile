@@ -1,7 +1,7 @@
 #
 # Creates a foundation container for Hugo on Alpine Linux
 #
-FROM alpine:3.3
+FROM alpine:3.4
 MAINTAINER Randolph Kahle "randolph.kahle@databliss.net"
 
 RUN apk update  && \
