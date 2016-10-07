@@ -14,4 +14,4 @@ then used for **devopsdays/docker-hugo-compiler** and
 devopsdays/docker-hugo
 --------------
 
-Docker image that serves as a foundation image for other Hugo Docker images.
+Docker image that serves as a foundational image for other Hugo Docker images.
