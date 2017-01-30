@@ -2,13 +2,13 @@
 #
 # File: build
 #
-# Purpose: Build the hugo foundation container on a local computer
+# Purpose: Build the hugo compiler docker image on a local computer
 #
-# Author: Randolph Kahle, Databliss, LLC
+# Author: Matt Stratton
 #
-# Copyright: Randolph Kahle, 2016
+# Copyright: Matt Stratton, Randolph Kahle, 2016
 #
 # License: MIT
 #
 
-docker build -t databliss/docker-hugo:v0.17 .
+docker build -t devopsdays/docker-hugo:v0.18.1 .
