@@ -4,4 +4,4 @@
 FROM alpine:3.4
 MAINTAINER Matt Stratton <matt.stratton@gmail.com>
 
-COPY hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 /usr/local/bin/hugo
+COPY hugo_0.19_linux_amd64/hugo_0.19_linux_amd64 /usr/local/bin/hugo

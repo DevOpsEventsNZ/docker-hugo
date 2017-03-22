@@ -11,4 +11,4 @@
 # License: MIT
 #
 
-docker build -t devopsdays/docker-hugo:v0.18.1 .
+docker build -t devopsdays/docker-hugo:v0.19 .
